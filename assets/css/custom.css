@@ -1,0 +1,222 @@
+/* ==========================================================================
+   Strata Modern Tech Theme Overrides (josephvolpe.tech)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Left Sidebar (#header) - Modern Dark Slate & Blue Gradient
+   -------------------------------------------------------------------------- */
+#header {
+  background-color: #0b1120 !important; /* Deep Night Slate */
+  background-image: linear-gradient(135deg, rgba(11, 17, 32, 0.95), rgba(30, 41, 59, 0.92)), url('../../images/bg.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid #1e293b;
+}
+
+#header .inner {
+  padding: 2.5rem 2rem;
+}
+
+/* Avatar Border & Accent Glow */
+#header .image.avatar {
+  border: 3px solid #0284c7; /* Tech Blue */
+  box-shadow: 0 0 20px rgba(2, 132, 199, 0.35);
+  border-radius: 100%;
+}
+
+/* Sidebar Typography */
+#header h1 {
+  color: #f8fafc !important; /* Crisp White */
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  font-size: 1.5rem !important;
+  margin-top: 1rem !important;
+}
+
+#header h1 strong {
+  color: #ffffff !important;
+}
+
+#header p {
+  color: #94a3b8 !important; /* Soft Slate Gray */
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#header p em {
+  color: #38bdf8 !important; /* Cyan Highlight */
+  font-style: normal;
+}
+
+/* Footer / Social Icons in Sidebar */
+#footer {
+  background-color: #0f172a !important;
+}
+
+#footer .icons a {
+  color: #94a3b8 !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#footer .icons a:hover {
+  color: #38bdf8 !important;
+  transform: translateY(-2px);
+}
+
+#footer .copyright {
+  color: #64748b !important;
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   2. Main Right Body & Typography (#main) - High Contrast
+   -------------------------------------------------------------------------- */
+body, #main {
+  background-color: #ffffff !important;
+  color: #0f172a !important; /* Deep Slate Navy for crisp readability */
+  font-size: 1rem;
+}
+
+/* Section Headings */
+#main h2 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 1.65rem !important;
+  letter-spacing: -0.025em;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#main h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0284c7; /* Blue accent line */
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+#main h3 {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+}
+
+#main h4 {
+  color: #0284c7 !important; /* Section Subheaders */
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs, Strong Tags, & Lists */
+#main p, #main li {
+  color: #334155 !important; /* Sharp Reading Text */
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+#main strong {
+  color: #0f172a !important;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   3. Links & Buttons
+   -------------------------------------------------------------------------- */
+a {
+  color: #0284c7 !important;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+  color: #0369a1 !important;
+}
+
+/* Buttons */
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.button:hover, input[type="submit"]:hover {
+  background-color: #0369a1 !important;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+.button.small {
+  font-size: 0.75rem !important;
+  padding: 0.4em 1.2em !important;
+  height: auto !important;
+  line-height: 2 !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Tables (Master Repositories & Career Trajectory)
+   -------------------------------------------------------------------------- */
+.table-wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.table-wrapper table th {
+  background-color: #f8fafc;
+  color: #0f172a !important;
+  font-weight: 700;
+  border-bottom: 2px solid #cbd5e1;
+  padding: 0.75rem 1rem;
+}
+
+.table-wrapper table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155 !important;
+  vertical-align: top;
+}
+
+.table-wrapper table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.table-wrapper table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* --------------------------------------------------------------------------
+   5. Work Items / Cards
+   -------------------------------------------------------------------------- */
+.work-item {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.work-item:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e1;
+}
+
+/* Social Icons in Section 7 */
+#seven .icons a {
+  color: #0284c7 !important;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#seven .icons a:hover {
+  color: #0369a1 !important;
+}
